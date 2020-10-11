@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Calculator"
+        android:textSize="30dp"></TextView>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Made by  Y.S.H"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yunhes45@gmail.com"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v0.1.0"
+        android:textSize="20dp"></TextView>
+
+</LinearLayout>

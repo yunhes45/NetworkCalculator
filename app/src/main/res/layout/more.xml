@@ -13,16 +13,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Network Calculator"
-        android:textSize="30dp"></TextView>
+        android:textSize="25dp"></TextView>
 
     <TextView
         android:textColor="#ffffff"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Made by  Y.S.H"
-        android:textSize="20dp"></TextView>
+        android:textSize="15dp"></TextView>
 
     <TextView
         android:textColor="#ffffff"
@@ -31,15 +31,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="yunhes45@gmail.com"
-        android:textSize="20dp"></TextView>
+        android:textSize="15dp"></TextView>
 
     <TextView
+        android:layout_marginBottom="50dp"
         android:textColor="#ffffff"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="v0.1.0"
-        android:textSize="20dp"></TextView>
+        android:textSize="15dp"></TextView>
 
 </LinearLayout>

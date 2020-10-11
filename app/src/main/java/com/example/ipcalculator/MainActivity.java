@@ -91,6 +91,18 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()){
+                          /*
+
+                            case R.id.zero:  input5.setText("0"); subnettext.setText("0 . 0 . 0 . 0"); break;
+                            case R.id.one:  input5.setText("1"); subnettext.setText("128 . 0 . 0 . 0"); break;
+                            case R.id.two:  input5.setText("2"); subnettext.setText("192 . 0 . 0 . 0"); break;
+                            case R.id.three:  input5.setText("3"); subnettext.setText("224 . 0 . 0 . 0"); break;
+                            case R.id.four:  input5.setText("4"); subnettext.setText("240 . 0 . 0 . 0"); break;
+                            case R.id.five:  input5.setText("5"); subnettext.setText("248 . 0 . 0 . 0"); break;
+                            case R.id.six:  input5.setText("6"); subnettext.setText("252 . 0 . 0 . 0"); break;
+                            case R.id.seven:  input5.setText("7"); subnettext.setText("254 . 0 . 0 . 0"); break;
+
+                          */
                             case R.id.eight:  input5.setText("8"); subnettext.setText("255 . 0 . 0 . 0"); break;
                             case R.id.nine: input5.setText("9"); subnettext.setText("255 . 128 . 0 . 0"); break;
                             case R.id.ten: input5.setText("10"); subnettext.setText("255 . 192 . 0 . 0");  break;
@@ -250,7 +262,9 @@ public class MainActivity extends AppCompatActivity {
 
 
                 //첫번째 자리 if문
-                if(s1 >=1 && s1 <=126){
+                if(cidr <= 7){
+                    setclass.setText("");
+                }else if(s1 >=0 && s1 <=126){
                     setclass.setText("A Class (Public)");
                 }else if(s1 >=128 && s1 <=191){
                     setclass.setText("B Class (Public)");
@@ -304,10 +318,10 @@ public class MainActivity extends AppCompatActivity {
                 //네번째 자리 if문
 
                 //다섯번째 자리 if문
-                if(cidr >= 33){
+                if(cidr >= 33 || cidr < 8){
                     s = "24";
                     input5.setText(s);
-                    Toast input1Msg = Toast.makeText(MainActivity.this, " 0 ~ 32까지의 값을 입력해주세요", Toast.LENGTH_LONG);
+                    Toast input1Msg = Toast.makeText(MainActivity.this, " 8 ~ 32까지의 값을 입력해주세요", Toast.LENGTH_LONG);
                     input1Msg.setGravity(Gravity.CENTER_HORIZONTAL|Gravity.CENTER_VERTICAL, 0, 0);
                     input1Msg.show();
                 }
@@ -598,6 +612,7 @@ public class MainActivity extends AppCompatActivity {
                     //16진수
 
                 }
+                /*
                 if(cidr>=0 && cidr<=7) {
                     int resultnet1 = s1 & input1z;
                     int resultnet2 = s2 & input2z;
@@ -687,6 +702,8 @@ public class MainActivity extends AppCompatActivity {
                             + " : " + Hexresultlast4.substring(Hexresultlast4.length()-2, Hexresultlast4.length()));
                     //16진수
                 }
+
+                 */
                 if(cidr == 31){
                     int resultnet4 = s4 & input4z;
                     int resultbroad4 = resultnet4 + input4y -1;

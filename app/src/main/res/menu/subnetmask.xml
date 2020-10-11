@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+
+    <item
+        android:id="@+id/zero"
+        android:title="0.0.0.0"></item>
+    <item
+        android:id="@+id/one"
+        android:title="128.0.0.0"></item>
+    <item
+        android:id="@+id/two"
+        android:title="192.0.0.0"></item>
+    <item
+        android:id="@+id/three"
+        android:title="224.0.0.0"></item>
+    <item
+        android:id="@+id/four"
+        android:title="240.0.0.0"></item>
+    <item
+        android:id="@+id/five"
+        android:title="248.0.0.0"></item>
+    <item
+        android:id="@+id/six"
+        android:title="252.0.0.0"></item>
+    <item
+        android:id="@+id/seven"
+        android:title="254.0.0.0"></item>
+
+    -->
+
     <item
         android:id="@+id/eight"
         android:title="255.0.0.0"></item>
